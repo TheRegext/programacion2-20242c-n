@@ -67,8 +67,8 @@ int main(){
         cin >> nventa;
     }
 
-    //int posMax = buscarPosicionMaximoEnVector(recaudacionFormaPago, CANT_FP);
-    //cout << "La forma de pago que más recaudó fue: " << nombresFormaPago[posMax] << endl;
+    int posMax = buscarPosicionMaximoEnVector(recaudacionFormaPago, CANT_FP);
+    cout << "La forma de pago que más recaudó fue: " << nombresFormaPago[posMax] << endl;
 
 
     /// B
