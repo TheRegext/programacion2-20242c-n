@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1724376724 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 03\jueves\virtual\incrementador\main.cpp
+	<iostream>
+	"Incrementador.h"
+
+1724376959 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 03\jueves\virtual\incrementador\incrementador.cpp
+	"Incrementador.h"
+
+1724376961 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 03\jueves\virtual\incrementador\incrementador.h
+
