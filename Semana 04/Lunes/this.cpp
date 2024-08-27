@@ -6,19 +6,8 @@
 # include<iostream>
 # include<cstring>
 
-///Clase: molde donde se definen las propiedades y el comportamiento que tendrán los objetos de esa clase
-///Al crear una clase agregamos un tipo de datos
-///
-///en private: ponemos las variables de la clase, o propiedades. ?????
-/// en public ponemos las funciones de la clase (métodos). Los métodos definen el comportamiento de los objetos de esa clase
 
 using namespace std;
-/*
-struct alumno{
-    int legajo;
-    char nombre[30], apellido[30];
-    bool regular;
-};*/
 
 class Alumno{
     private:///significa que todo lo que se ubique en esta parte será accesible dentro de la clase
@@ -50,16 +39,21 @@ class Alumno{
 
         bool getRegular(){return regular;}
         ~Alumno(){
-            cout<<"SE MURIO EL OBJETO :-("<<endl;
+            //cout<<"SE MURIO EL OBJETO :-("<<endl;
+         }
+         void MostrarDireccion(){
+            cout<<" VALOR DE this "<<this<<endl;
          }
 
+         ///this es un puntero que contiene la dirección del objeto que llama al método.Por medio de él el método puede leer o
+         ///escribir en la propiedad. Se dice que es un puntero oculto, pero si es necesario se puede hacer visible
 };
 
 void Alumno::Cargar(){
     cout<<"LEGAJO ";
-    cin>>legajo;
+    cin>>(*this).legajo;
     cout<<"NOMBRE ";
-    cin>>nombre;
+    cin>>this->nombre;
     cout<<"APELLIDO ";
     cin>>apellido;
 
@@ -68,7 +62,7 @@ void Alumno::Cargar(){
 
 void Alumno::Mostrar(){
     cout<<"LEGAJO ";
-    cout<<legajo<<endl;
+    cout<<this->legajo<<endl;
     cout<<"NOMBRE ";
     cout<<nombre<<endl;
     cout<<"APELLIDO ";
@@ -76,44 +70,21 @@ void Alumno::Mostrar(){
 
 }
 
-void cargarAlumnos(Alumno *v,int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        v[i].Cargar();
-        cout<<endl;
-    }
-}
 
-void mostrarAlumnos(Alumno *v,int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        v[i].Mostrar();
-        cout<<endl<<endl;
-    }
-}
-
-int buscarLegajo(Alumno *v, int tam, int legajo){
-    int i;
-    for(i=0;i<tam;i++){
-        if(v[i].getLegajo()==legajo)return i;
-    }
-    return -1;
-}
 
 int main(){
-    Alumno vAlumnos[5];
 
-    cargarAlumnos(vAlumnos,3);
-    system("cls");
-    mostrarAlumnos(vAlumnos, 3);
+    Alumno alu2, alu1, *pA;
 
-    int legajo;
-    cout<<"INGRESE EL LEGAJO A BUSCAR ";
-    cin>>legajo;
-    int pos=buscarLegajo(vAlumnos, 3, legajo);
-    if(pos!=-1) vAlumnos[pos].Mostrar();
-    else cout<<"NO EXISTE NINGUN ALUMNO CON ESE LEGAJO";
+    pA=&alu2;
 
+   /* cout<<"DIRECCION DE alu2 "<<&alu2<<endl;
+    alu2.MostrarDireccion();
+
+    cout<<endl<<"DIRECCION DE alu1 "<<&alu1<<endl;
+    alu1.MostrarDireccion();*/
+    pA->Cargar();
+    alu2.Mostrar();
 	cout<<endl;
 	system("pause");
 	return 0;

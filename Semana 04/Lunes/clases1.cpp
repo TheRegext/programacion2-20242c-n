@@ -49,9 +49,6 @@ class Alumno{
         const char  *getApellido(){return apellido;}
 
         bool getRegular(){return regular;}
-        ~Alumno(){
-            cout<<"SE MURIO EL OBJETO :-("<<endl;
-         }
 
 };
 
@@ -76,44 +73,16 @@ void Alumno::Mostrar(){
 
 }
 
-void cargarAlumnos(Alumno *v,int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        v[i].Cargar();
-        cout<<endl;
-    }
-}
-
-void mostrarAlumnos(Alumno *v,int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        v[i].Mostrar();
-        cout<<endl<<endl;
-    }
-}
-
-int buscarLegajo(Alumno *v, int tam, int legajo){
-    int i;
-    for(i=0;i<tam;i++){
-        if(v[i].getLegajo()==legajo)return i;
-    }
-    return -1;
-}
-
 int main(){
-    Alumno vAlumnos[5];
+    int a;
+    Alumno obj, aux;
 
-    cargarAlumnos(vAlumnos,3);
-    system("cls");
-    mostrarAlumnos(vAlumnos, 3);
+    obj.Cargar();
+    obj.Mostrar();
 
-    int legajo;
-    cout<<"INGRESE EL LEGAJO A BUSCAR ";
-    cin>>legajo;
-    int pos=buscarLegajo(vAlumnos, 3, legajo);
-    if(pos!=-1) vAlumnos[pos].Mostrar();
-    else cout<<"NO EXISTE NINGUN ALUMNO CON ESE LEGAJO";
 
+    aux=obj;
+    aux.Mostrar();
 	cout<<endl;
 	system("pause");
 	return 0;

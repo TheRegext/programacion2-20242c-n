@@ -6,19 +6,8 @@
 # include<iostream>
 # include<cstring>
 
-///Clase: molde donde se definen las propiedades y el comportamiento que tendrán los objetos de esa clase
-///Al crear una clase agregamos un tipo de datos
-///
-///en private: ponemos las variables de la clase, o propiedades. ?????
-/// en public ponemos las funciones de la clase (métodos). Los métodos definen el comportamiento de los objetos de esa clase
 
 using namespace std;
-/*
-struct alumno{
-    int legajo;
-    char nombre[30], apellido[30];
-    bool regular;
-};*/
 
 class Alumno{
     private:///significa que todo lo que se ubique en esta parte será accesible dentro de la clase
@@ -26,6 +15,18 @@ class Alumno{
         char nombre[30], apellido[30];
         bool regular;
     public: ///todo lo que pongamos acá será accesible tanto dentro como fuera de la clase.
+       /* Alumno(){
+            legajo=0;
+            strcpy(nombre,"nada");
+            strcpy(apellido,"nada");
+            regular=true;
+        }*/
+        Alumno(int leg=5, const char *n="todo", const char *a="nada"){
+            legajo=leg;
+            strcpy(nombre,n);
+            strcpy(apellido,a);
+            regular=true;
+        }
         void Cargar();
         void Mostrar();
         ///ASIGNAR VALOR A CADA UNA DE LAS PROPIEDADES-> SET
@@ -49,9 +50,6 @@ class Alumno{
         const char  *getApellido(){return apellido;}
 
         bool getRegular(){return regular;}
-        ~Alumno(){
-            cout<<"SE MURIO EL OBJETO :-("<<endl;
-         }
 
 };
 
@@ -76,44 +74,13 @@ void Alumno::Mostrar(){
 
 }
 
-void cargarAlumnos(Alumno *v,int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        v[i].Cargar();
-        cout<<endl;
-    }
-}
-
-void mostrarAlumnos(Alumno *v,int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        v[i].Mostrar();
-        cout<<endl<<endl;
-    }
-}
-
-int buscarLegajo(Alumno *v, int tam, int legajo){
-    int i;
-    for(i=0;i<tam;i++){
-        if(v[i].getLegajo()==legajo)return i;
-    }
-    return -1;
-}
-
 int main(){
-    Alumno vAlumnos[5];
-
-    cargarAlumnos(vAlumnos,3);
-    system("cls");
-    mostrarAlumnos(vAlumnos, 3);
-
-    int legajo;
-    cout<<"INGRESE EL LEGAJO A BUSCAR ";
-    cin>>legajo;
-    int pos=buscarLegajo(vAlumnos, 3, legajo);
-    if(pos!=-1) vAlumnos[pos].Mostrar();
-    else cout<<"NO EXISTE NINGUN ALUMNO CON ESE LEGAJO";
-
+    Alumno reg, obj(1, "ANA", "PEREZ"), otro(1);
+    reg.Mostrar();
+	cout<<endl;
+	obj.Mostrar();
+	cout<<endl;
+	otro.Mostrar();
 	cout<<endl;
 	system("pause");
 	return 0;
