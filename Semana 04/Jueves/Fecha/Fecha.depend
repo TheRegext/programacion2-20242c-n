@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1724979194 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 04\jueves\fecha\fecha.cpp
+	"Fecha.h"
+
+1724979302 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 04\jueves\fecha\fecha.h
+	<string>
+
+1584205420 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 04\jueves\fecha\main.cpp
+	<iostream>
+
+1724978857 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 04\jueves\fecha\alumno.cpp
+	<iostream>
+	<cstring>
+	"Alumno.h"
+
+1724978872 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 04\jueves\fecha\alumno.h
+	"Fecha.h"
+
