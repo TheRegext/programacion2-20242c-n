@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1725575290 source:c:\users\rquiop\desktop\facultad\programación ii\herencia\funcion1.cpp
+
+1725576344 source:c:\users\rquiop\desktop\facultad\programación ii\herencia\martillo.cpp
+	<iostream>
+	<cstdlib>
+	"Martillo.h"
+
+1725580161 c:\users\rquiop\desktop\facultad\programación ii\herencia\martillo.h
+	"Herramientas.h"
+
+1725580898 c:\users\rquiop\desktop\facultad\programación ii\herencia\herramientas.h
+
+1725580601 source:c:\users\rquiop\desktop\facultad\programación ii\herencia\herramientas.cpp
+	<iostream>
+	<cstdlib>
+	"Herramientas.h"
+
+1725580601 source:c:\users\rquiop\desktop\facultad\programación ii\herencia\main.cpp
+	<iostream>
+	"Herramientas.h"
+
+1725584088 source:d:\desarrollo\utn\programacion2-20242c-n\semana 05\jueves\herenciaconerror\main.cpp
+	<iostream>
+	"Martillo.h"
+
+1725584150 source:d:\desarrollo\utn\programacion2-20242c-n\semana 05\jueves\herenciaconerror\herramientas.cpp
+	<iostream>
+	"Herramientas.h"
+
+1725584050 d:\desarrollo\utn\programacion2-20242c-n\semana 05\jueves\herenciaconerror\herramientas.h
+	<string>
+
+1725584072 d:\desarrollo\utn\programacion2-20242c-n\semana 05\jueves\herenciaconerror\martillo.h
+	"Herramientas.h"
+
+1725584145 source:d:\desarrollo\utn\programacion2-20242c-n\semana 05\jueves\herenciaconerror\martillo.cpp
+	<iostream>
+	<cstdlib>
+	"Martillo.h"
+
