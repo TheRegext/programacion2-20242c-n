@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1726179398 source:c:\angel\pr2\semana 06\presencial\almacen\main.cpp
+	<iostream>
+	"Producto.h"
+
+1726178848 c:\angel\pr2\semana 06\presencial\almacen\producto.h
+	<string>
+
+1726179225 source:c:\angel\pr2\semana 06\presencial\almacen\producto.cpp
+	"Producto.h"
+
