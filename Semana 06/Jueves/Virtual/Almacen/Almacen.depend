@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1726190662 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 06\jueves\virtual\almacen\main.cpp
+	<iostream>
+	"Producto.h"
+
+1726190821 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 06\jueves\virtual\almacen\producto.h
+	<string>
+
+1726188861 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 06\jueves\virtual\almacen\producto.cpp
+	"Producto.h"
+	<cstring>
+
