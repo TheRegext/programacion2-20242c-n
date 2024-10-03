@@ -1,0 +1,66 @@
+# depslib dependency file v1.0
+1727953790 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\httpclient.cpp
+	<iostream>
+	"HttpClient.h"
+
+1727953638 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\httpclient.h
+	<string>
+	<curl/curl.h>
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"options.h"
+	"header.h"
+	"websockets.h"
+	"mprintf.h"
+	"typecheck-gcc.h"
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\curlver.h
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\system.h
+	<ConditionalMacros.h>
+	<inttypes.h>
+	<inttypes.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\easy.h
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\multi.h
+	"curl.h"
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\urlapi.h
+	"curl.h"
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\options.h
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\header.h
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\websockets.h
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\mprintf.h
+	<stdarg.h>
+	<stdio.h>
+	"curl.h"
+
+1726649800 e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\curl\include\curl\typecheck-gcc.h
+
+1727998578 source:e:\github\educacion\utn\2024\2c\programacion2-20242c-n\semana 09\jueves\api\main.cpp
+	<iostream>
+	"HttpClient.h"
+
