@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1726782853 source:d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\archivoserviciomesa.cpp
+	"Fecha.h"
+	"ArchivoServicioMesa.h"
+
+1726783148 d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\fecha.h
+	<string>
+
+1726783155 d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\archivoserviciomesa.h
+	<string>
+	"ServicioMesa.h"
+
+1726783160 d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\serviciomesa.h
+	"Fecha.h"
+
+1726782050 source:d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\fecha.cpp
+	"Fecha.h"
+
+1727396468 source:d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\main.cpp
+	"Examen.h"
+
+1727394706 d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\examen.h
+
+1727122543 source:d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\serviciomesa.cpp
+	"ServicioMesa.h"
+
+1727396451 source:d:\desarrollo\utn\programacion2-20242c-n\semana 08\jueves\restaurant\examen.cpp
+	<iostream>
+	"Examen.h"
+	"ServicioMesa.h"
+	"ArchivoServicioMesa.h"
+
