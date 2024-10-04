@@ -31,7 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="curl/include" />
 		</Compiler>
+		<Linker>
+			<Add library="libcurl.dll.a" />
+			<Add directory="curl/lib" />
+		</Linker>
+		<Unit filename="HttpClient.cpp" />
+		<Unit filename="HttpClient.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
